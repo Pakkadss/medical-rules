@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MEDICAL RULES - คู่มือระเบียบแพทย์</title>
+  <!-- Google Font: Prompt -->
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- ลิงก์ไฟล์ CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Topbar: แถบเมนูด้านบน -->
+  <header class="topbar">
+    <div class="brand-box">MEDICAL RULES</div>
+    <nav class="main-nav" id="mainNav">
+      <!-- เรนเดอร์ด้วย JavaScript -->
+    </nav>
+  </header>
+
+  <!-- Container หลักแบ่ง Sidebar และ Content -->
+  <div class="page-container">
+    
+    <!-- Sidebar: แถบเมนูด้านซ้าย -->
+    <aside class="sidebar">
+      <div class="side-heading">หัวข้อในเมนูนี้</div>
+      <nav class="sub-nav" id="subNav">
+        <!-- เรนเดอร์ด้วย JavaScript -->
+      </nav>
+    </aside>
+
+    <!-- Main Content: พื้นที่แสดงเนื้อหาหลัก -->
+    <main class="content">
+      <section class="hero-banner">
+        <div class="eyebrow" id="pageEyebrow">ระบบจัดการกฎระเบียบหน่วยงานแพทย์</div>
+        <h1 id="pageTitle">กำลังโหลด...</h1>
+        <p id="pageDescription">กรุณารอสักครู่ ระบบกำลังโหลดข้อมูลระเบียบข้อบังคับ</p>
+      </section>
+
+      <!-- Search & Tools Bar -->
+      <div class="content-tools">
+        <span id="sectionCount">แสดง 0 จาก 0 ข้อ</span>
+        <input type="text" id="searchInput" class="search-box" placeholder="ค้นหากฎ หรือข้อบังคับ...">
+      </div>
+
+      <!-- รายการข้อมูลเนื้อหา -->
+      <div class="content-list" id="contentList"></div>
+
+      <!-- สถานะเมื่อไม่พบข้อมูล -->
+      <div id="emptyState" class="empty-state" style="display: none;">
+        ไม่พบข้อมูลที่คุณค้นหา
+      </div>
+    </main>
+
+  </div>
+
+  <!-- โหลดไฟล์ข้อมูลแต่ละเมนู -->
+  <script src="DATA/data-rules.js"></script>
+  <script src="DATA/data-practice.js"></script>
+  <script src="DATA/data-hospital.js"></script>
+  <script src="DATA/data-story.js"></script>
+  <script src="DATA/data-blacklist.js"></script>
+  <script src="DATA/data-fee.js"></script>
+  
+  <!-- โหลดไฟล์ระบบหลัก -->
+  <script src="DATA/script.js" defer></script>
+</body>
+</html>
